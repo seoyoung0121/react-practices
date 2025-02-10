@@ -5,7 +5,7 @@ import data from './assets/json/data.js';
 
 function TabBox(props) {
     return (
-        <div class={"tab-box"}>
+        <div className={"tab-box"}>
             <Tabs data={data} />
             <TabView/>
         </div>
