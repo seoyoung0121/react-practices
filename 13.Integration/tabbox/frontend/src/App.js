@@ -1,5 +1,5 @@
 import React from 'react';
-import './assets/css/styles.css';
+import './assets/scss/App.scss';
 import TabBox from './TabBox.js';
 function App(props) {
 

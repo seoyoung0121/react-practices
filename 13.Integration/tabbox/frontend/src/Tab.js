@@ -1,9 +1,10 @@
 import React from 'react';
+import { Tab_Item, Active } from './assets/scss/Tab.scss';
 
 function Tab({name, active}) {
     return (
-        <li class={active?'active':''}>{name}</li>
+        <li className={`${Tab_Item} ${active?Active:''}`}>{name}</li>
     );
 }
-
+//active?'active':''
 export default Tab;
