@@ -13,8 +13,8 @@
         background-color: #ccc;
         cursor: pointer;
         
-    }
-    .Active {
-        background-color: #fc6;
+        &:global(.active){
+            background-color: #fc6;
+        }
     }
 }
