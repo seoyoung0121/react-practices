@@ -6,7 +6,6 @@ function Emaillist({emails}) {
     return (
         <ul className={Email_List}>
             {
-
                 emails?.map(email => <Email
                                         key={email.id}
                                         firstName={email.firstName}
