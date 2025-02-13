@@ -13,7 +13,7 @@ const StyledDiv=styled.div`
 function TabView(props) {
     return (
         <StyledDiv>
-            탭뷰입니다.
+            {props.contents}
         </StyledDiv>
     );
 }

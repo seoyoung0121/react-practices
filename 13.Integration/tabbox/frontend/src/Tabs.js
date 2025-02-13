@@ -7,10 +7,10 @@ const StyledUl=styled.ul`
     height: 24px;
 `;
 
-function Tabs({ data }) {
+function Tabs({ data, selectTab }) {
     return (
         <StyledUl>
-            {data.map((tab, index) => <Tab key={index} name={tab.name} active={tab.active} />)}
+            {data.map((tab, index) => <Tab key={index} no={tab.no} name={tab.name} active={tab.active} selectTab={selectTab} />)}
         </StyledUl>
     );
 }

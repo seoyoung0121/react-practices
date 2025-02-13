@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import {Tab_Item} from './assets/scss/Tab.scss';
 
-function Tab({ name, active }) {
-    const [select, setSelect] = useState(active);
+function Tab({ no, name, active, selectTab }) {
     return (
         <li
-            className={`${Tab_Item} ${select ? 'active' : ''}`}
+            className={`${Tab_Item} ${active ? 'active' : ''}`}
             onClick={() => {
-                setSelect(true);
+                selectTab(no);
             } }
         >
             {name}
@@ -15,5 +14,4 @@ function Tab({ name, active }) {
         </li>
     );
 }
-//active?'active':''
 export default Tab;
