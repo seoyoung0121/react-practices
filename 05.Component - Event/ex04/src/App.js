@@ -3,6 +3,7 @@ import logo from './assets/images/react-logo.png';
 
 export default function App() {
     const imgRef = useRef(null);
+    
     const onKeyUpInput = (e) => {
         if (e.key = 'Enter') {
             console.log('keyup:' + e.target.value);
