@@ -9,7 +9,7 @@ function Card({data}) {
     return (
         <div className={_Card}>
             <CardTitle title={data.title} open={open} setOpen={setOpen}/>
-            {open?<CardDetails  data={data}/>:null}
+            <CardDetails  data={data} open={open}/>
         </div>
     );
 }

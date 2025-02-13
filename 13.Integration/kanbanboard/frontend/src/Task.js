@@ -6,7 +6,7 @@ function Task({task}) {
     return (
         <li className={_Task}>
             <input type='checkbox' checked={done?true:false} onChange={()=>setDone(!done)}/>
-                {task.name}
+            {" "+task.name+" "}
             <a href='#' className={done?Task_Remove:''}></a>
         </li>
     );

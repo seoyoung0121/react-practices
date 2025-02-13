@@ -10,16 +10,16 @@ html {
     }
     body { 
             background: #eee; 
-            font-family: "맑은 고딕", 돋움, 굴림;  
+            font-family: "맑은 고딕", 돋움, 굴림; 
+            
+            :global(#root) { 
+                width: 100%; height:100%; 
+                :global(.Kanban_Board){
+                    white-space: nowrap; height:100%; margin: 20px auto;
+                }
         }
 }
 
 html, body  { width: 100%; height:100%; }
 
-
-:global(#root) { 
-    width: 100%; height:100%; 
-    :global(.Kanban_Board){
-        white-space: nowrap; height:100%; margin: 20px auto;
-    }
 }

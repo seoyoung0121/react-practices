@@ -1,11 +1,11 @@
 import React from 'react';
 import TaskList from './TaskList';
 
-function CardDetails({data}) {
+function CardDetails({data, open}) {
     return (
         <div>
             {data.description}
-            <TaskList data={data}/>
+            {open?<TaskList data={data}/>:null}
         </div>
     );
 }
