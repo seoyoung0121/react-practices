@@ -13,7 +13,7 @@ const StyledDiv=styled.div`
 function TabView(props) {
     return (
         <StyledDiv>
-            {props.contents}
+            <span>{props.contents}</span>
         </StyledDiv>
     );
 }
