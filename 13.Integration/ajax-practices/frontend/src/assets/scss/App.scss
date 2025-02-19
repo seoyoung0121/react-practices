@@ -80,7 +80,7 @@ html {
                                 display: block;
                                 margin-top: 5px;
                                 padding: 3px 5px;
-                                font-size: 0.5em;
+                                font-size: 0.85em;
                             }
                         }
 
@@ -111,12 +111,16 @@ html {
                                 }
                             }
 
-                            img {       
-                                display:  block;
-                                margin-top: 5px;;
-
+                            ins {
+                                display: block;
+                                margin-top: 5px;
                                 height: 50px;
                                 width: 50px;
+                                background-color: #E0E0E0;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center;
+                                border: 1px solid rgba(0, 0, 0, 0.3);
                             }
                         }
                     }
