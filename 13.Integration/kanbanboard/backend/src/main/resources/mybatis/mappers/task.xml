@@ -3,7 +3,7 @@
 <mapper namespace="task">
 	<select id="findAllByCardNo" resultType="task" parameterType="long">
 		<![CDATA[	
-			  select no, name, done
+			  select no, name, done, card_no as cardNo
 		      	from task
 		       where card_no=#{cardNo}	
 		  	order by no desc
